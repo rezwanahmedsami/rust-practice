@@ -14,7 +14,8 @@
 // mod cli;
 // mod multiple_module;
 // mod genric;
-mod traits;
+// mod traits;
+mod filehandeling;
 fn main() {
     // print::run();
     // variables::run();
@@ -33,7 +34,8 @@ fn main() {
     // multiple_module::mod1::run();
     // multiple_module::mod2::run();
     // genric::run();
-    traits::run();
+    // traits::run();
+    filehandeling::run();
 
 
 }
