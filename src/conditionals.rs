@@ -15,4 +15,13 @@ pub fn run(){
     // Short hand if
     let is_of_age = if age >= 20 { true } else { false };
     println!("Is of age: {}", is_of_age);
+
+
+    // switch case statement
+    let day = 1;
+    match day {
+        1 => println!("This is 1"),
+        2 => println!("This is 2"),
+        _ => println!("Invalid day")
+    }
 }

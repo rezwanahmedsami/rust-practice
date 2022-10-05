@@ -11,7 +11,9 @@
 // mod pointers;
 // mod structs;
 // mod enums;
-mod cli;
+// mod cli;
+// mod multiple_module;
+mod genric;
 fn main() {
     // print::run();
     // variables::run();
@@ -26,7 +28,10 @@ fn main() {
     // pointers::run();
     // structs::run();
     // enums::run();
-    cli::run();
+    // cli::run();
+    // multiple_module::mod1::run();
+    // multiple_module::mod2::run();
+    genric::run();
 
 
 }
