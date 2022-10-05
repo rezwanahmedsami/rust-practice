@@ -13,7 +13,8 @@
 // mod enums;
 // mod cli;
 // mod multiple_module;
-mod genric;
+// mod genric;
+mod traits;
 fn main() {
     // print::run();
     // variables::run();
@@ -31,7 +32,8 @@ fn main() {
     // cli::run();
     // multiple_module::mod1::run();
     // multiple_module::mod2::run();
-    genric::run();
+    // genric::run();
+    traits::run();
 
 
 }

@@ -6,15 +6,36 @@
 //     None,  
 // }
 
-struct Point<T>{
-    x: T,
-    y: T
+// struct Point<T>{
+//     x: T,
+//     y: T
+// }
+
+// impl <T> Point<T> {
+//     fn x(&self) ->&T {
+//         &self.x
+//     }
+// }
+
+fn max_i32(a: i32, b: i32) -> i32 {
+    if a > b {
+        return a;
+    }
+    return b;
 }
 
-impl <T> Point<T> {
-    fn x(&self) ->&T {
-        &self.x
+fn max_f64(a: f64, b: f64) -> f64 {
+    if a > b {
+        return a;
     }
+    return b;
+}
+
+fn max_genric<T: PartialOrd> (a: T, b: T) -> T{
+    if a > b {
+        return a;
+    }
+    return b;
 }
 
 pub fn run(){
@@ -24,7 +45,10 @@ pub fn run(){
     // let x : Option<f64> = Some(10.5); // 'T' is of type f64.  
     // let x : Option<char> = Some('b'); // 'T' is of type char.   
 
-    let _p: Point<i32> = Point { x: 4, y: 5 };
+    // let _p: Point<i32> = Point { x: 4, y: 5 };
     // println!("Generic struct is: {:?}", p);
-
+    println!("Max i32 is: {}", max_i32(20, 10));
+    println!("Max f64 is: {}", max_f64(20.34, 10.35));
+    println!("Max genric for i32 is: {}", max_genric(50, 5));
+    println!("Max genric for f64 is: {}", max_genric(50.3, 5.5));
 }
